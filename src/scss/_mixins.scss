@@ -1,0 +1,31 @@
+@mixin text($color: inherit, $family: inherit, $size: 1.6rem, $weight: 400, $line: 1.7) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+}
+@mixin hover {
+    @include tr();
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}
+
+@mixin tr {
+    transition:  all .4s ease-in;
+}
+
+@mixin posCenter {
+    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+@mixin grad {
+    background: -webkit-linear-gradient(white, #38495a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

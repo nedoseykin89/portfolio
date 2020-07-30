@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100vh; }
+
+body {
+  font: 16px/1 'Open Sans', sans-serif; }
+
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -190px;
+  background: #fff;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  .nav:hover .socials {
+    width: 5%; }
+  .nav .socials {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 100%;
+    color: #1231df;
+    border-right: 1px solid #a8a8a8;
+    -webkit-transition: .5s width;
+    -o-transition: .5s width;
+    transition: .5s width;
+    overflow: hidden;
+    cursor: pointer; }
+    .nav .socials__link:focus, .nav .socials :active, .nav .socials :visited {
+      color: blue; }
+    .nav .socials__link:hover {
+      color: #888888; }
+    .nav .socials:last-child {
+      border-right: 0; }
+    .nav .socials:hover {
+      width: 80%;
+      color: #555; }
+    .nav .socials .small {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 76px;
+      line-height: 78px;
+      text-align: center;
+      font-family: fontawesome;
+      font-size: 24px; }
+    .nav .socials .full {
+      position: absolute;
+      top: 22px;
+      left: 100px;
+      text-transform: uppercase; }
+      .nav .socials .full .f1, .nav .socials .full .f2 {
+        font-size: 16px;
+        font-weight: 700;
+        white-space: nowrap; }
+      .nav .socials .full .f2 {
+        margin-top: 8px;
+        font-size: 12px; }
+    .nav .socials .prev {
+      position: absolute;
+      top: 0;
+      left: 7px;
+      font-family: fontawesome;
+      font-size: 12px;
+      line-height: 78px;
+      -webkit-transition: .5s opacity;
+      -o-transition: .5s opacity;
+      transition: .5s opacity;
+      opacity: 0; }
+    .nav .socials:hover .prev {
+      opacity: 0; }
+  .nav:hover .prev {
+    opacity: 1; }
