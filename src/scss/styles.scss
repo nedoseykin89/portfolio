@@ -555,15 +555,36 @@ body {
   color: #555;
   text-align: center;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-works {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+
 }
 
+}
 h1 {
   font-size: 2.2em;
 }
+.gallery-box {
+  margin: 15px;
+  @media (max-width: 768px) {
+    margin: 0;
 
+}
+}
 // base
 .flip {
     position: relative;
+    
     >.front,
     >.back {
         display: block;
